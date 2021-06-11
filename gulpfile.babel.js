@@ -31,8 +31,8 @@ const requireDir = require("require-dir"),
             watch: "./src/resources/img/**/*.{jpg,jpeg,png,gif,svg}",
         },
         sprites: {
-            src: "./src/resources/img/sprites/*.svg",
-            dist: "./build/img/sprites/",
+            src: "./src/resources/img/sprite/*.svg",
+            dist: "./build/img/sprite/",
             watch: "./src/resources/img/svg/*.svg",
         },
         fonts: {
