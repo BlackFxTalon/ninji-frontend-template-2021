@@ -44,6 +44,14 @@ const requireDir = require("require-dir"),
             src: "./src/resources/img/favicon/*.{jpg,jpeg,png,gif,tiff,svg}",
             dist: "./build/img/favicon/",
         },
+        avif: {
+            src: [
+                "./src/resources/img/**/*.{jpg,jpeg,png,gif,tiff}",
+                "!./src/resources/img/favicon/*.{jpg,jpeg,png,gif,tiff}",
+            ],
+            dist: "./build/img/",
+            watch: "./src/resources/img/**/*.{jpg,jpeg,png,gif}",
+        },
     };
 
 requireDir("./gulp-tasks/");
@@ -58,6 +66,7 @@ export const development = gulp.series(
         "scripts",
         "images",
         "webp",
+        "avif",
         "sprites",
         "fonts",
         "favicons",
@@ -73,6 +82,7 @@ export const prod = gulp.series(
         "scripts",
         "images",
         "webp",
+        "avif",
         "sprites",
         "fonts",
         "favicons",
