@@ -4,6 +4,7 @@
     "description": "my new template for frontend development in 2021 (gulp + webpack + sass + pug)",
     "main": "gulpfile.js",
     "dependencies": {
+        "jquery": "^3.6.0",
         "modern-normalize": "^0.6.0"
     },
     "devDependencies": {

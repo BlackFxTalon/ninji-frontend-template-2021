@@ -14,6 +14,7 @@ module.exports = {
     ],
 
     entry: {
+        vendors: "./src/js/vendors/vendors.js",
         main: "./src/js/main.js",
     },
 
@@ -21,19 +22,6 @@ module.exports = {
         filename: "[name].js",
         chunkFilename: "[name].js",
         publicPath: "/",
-    },
-
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /node_modules/,
-                    chunks: "initial",
-                    name: "vendor",
-                    enforce: true,
-                },
-            },
-        },
     },
 
     module: {
