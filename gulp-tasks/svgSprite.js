@@ -11,9 +11,6 @@ gulp.task("sprites", () => {
         .src(paths.sprites.src)
         .pipe(
             svg({
-                shape: {
-                    dest: "intermediate-svg",
-                },
                 mode: {
                     stack: {
                         sprite: "../sprite.svg",
