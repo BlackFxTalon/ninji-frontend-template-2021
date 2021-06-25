@@ -10,8 +10,8 @@ my new template for frontend development in 2021 (gulp + webpack + sass + pug)
 ## install dependencies
 <code>npm i</code>
 
-##launch development 
+## launch development 
 <code>npm run dev</code>
 
-##launch production
+## launch production
 <code>npm run build</code>
