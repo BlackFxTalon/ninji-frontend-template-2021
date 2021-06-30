@@ -5,22 +5,22 @@ import gulp from "gulp";
 const requireDir = require("require-dir"),
     paths = {
         pug: {
-            src: ["./src/pug/index.pug", "./src/pug/pages/*.pug"],
+            src: ["./src/pug/pages/*.pug"],
             dist: "./build/",
-            watch: ["./src/blocks/**/*.pug", "./src/pug/**/*.pug"],
+            watch: ["./src/components/**/*.pug", "./src/pug/**/*.pug"],
         },
         styles: {
             src: "./src/styles/main.{scss,sass}",
             dist: "./build/styles/",
             watch: [
-                "./src/blocks/**/*.{scss,sass}",
+                "./src/components/**/*.{scss,sass}",
                 "./src/styles/**/*.{scss,sass}",
             ],
         },
         scripts: {
             src: "./src/js/main.js",
             dist: "./build/js/",
-            watch: ["./src/blocks/**/*.js", "./src/js/**/*.js"],
+            watch: ["./src/components/**/*.js", "./src/js/**/*.js"],
         },
         images: {
             src: [
