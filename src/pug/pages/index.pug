@@ -1,5 +1,6 @@
 extends ../layouts/default
 include ../helpers/mixins
+include ../../components/button/button
 
 block variables 
   - const title = "index page"
@@ -7,5 +8,6 @@ block variables
 block content
   main.main
     h2 index page
+    +button({title:"button",isMain:true})(disabled)
 
 

@@ -1,1 +1,9 @@
-button(type="button") кнопка
+mixin button(options)
+  -
+    var buttonClassName = "btn"
+    if(options.isHeader)
+    buttonClassName += options.isHeader ? " header__btn" : ""
+    if(options.isMain)
+    buttonClassName += options.isMain ? " main__btn" : ""
+
+  button(class = buttonClassName, type="button")&attributes(attributes)= options.title || "кнопка"

@@ -1,3 +1,7 @@
+include ../../components/button/button
+include ../../pug/helpers/mixins
+
 header.header 
-    .container 
-        h1 Это хедер
+  .container 
+    h1 Это хедер
+    +button({title:"button",isMain:true})
