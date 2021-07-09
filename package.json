@@ -66,8 +66,7 @@
         "build:favicons": "gulp favicons --production",
         "lint:scripts": "eslint --color ./src/blocks",
         "lint:scripts --fix": "eslint --fix --color ./src/blocks",
-        "bem-c": "bem create $* -l src/blocks/components",
-        "bem-m": "bem create $* -l src/blocks/modules"
+        "bem-c": "bem create $* -l src/components"
     },
     "keywords": [],
     "author": "",
