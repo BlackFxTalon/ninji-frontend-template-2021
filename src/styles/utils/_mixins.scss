@@ -18,12 +18,16 @@
     }
 }
 
-@mixin media-small() {
+@mixin media-extra-small() {
     @media (max-width: $mediaWidthSmall) {
         @content;
     }
 }
-
+@mixin media-small() {
+    @media (min-width: $mediaWidthSmall) {
+        @content;
+    }
+}
 @mixin media-medium() {
     @media (min-width: $mediaWidthMedium) {
         @content;
