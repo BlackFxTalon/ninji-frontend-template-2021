@@ -29,20 +29,23 @@ img {
     padding-left: toRem(30);
     padding-right: toRem(30);
 
-    @include media-small() {
+    @include media-extra-small() {
         max-width: 100%;
     }
+    @include media-small() {
+        max-width: 540px;
+    }
     @include media-medium() {
-        max-width: 34rem;
+        max-width: 720px;
     }
     @include media-large() {
-        max-width: 60rem;
+        max-width: 960px;
     }
     @include media-extra-large() {
-        max-width: 71rem;
+        max-width: 1140px;
     }
     @include media-Extra-extra-large() {
-        max-width: 82rem;
+        max-width: 1320px;
     }
 }
 
